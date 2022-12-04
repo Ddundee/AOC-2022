@@ -20,7 +20,6 @@ fs.readFile('input.txt', 'utf-8', (err, data) => {
                 }
             }
         }
-        // console.log(char.charCodeAt(0));
         let asciiVal = char.charCodeAt(0);
         if (asciiVal <= 90) {
             asciiVal -= 38;
@@ -29,13 +28,10 @@ fs.readFile('input.txt', 'utf-8', (err, data) => {
             asciiVal -= 96;
         }
         output += asciiVal
-
-        console.log("item", item)
-        console.log("outuput", char, output);
     })
 
 
 
-    console.log("outuput", output);
+    console.log("output", output);
 
 })
